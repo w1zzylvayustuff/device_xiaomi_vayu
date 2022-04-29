@@ -11,16 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit some common AEX stuff
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common DotOS stuff
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # BootAnimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# AospExtended
+# DotOS
 WITH_GAPPS := true 
 
-PRODUCT_NAME := aosp_vayu
+PRODUCT_NAME := dot_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
